@@ -1,0 +1,12 @@
+@page{
+	   size: 4in;
+	   margin: 0;
+	  
+}
+@media print{
+	  pre,blockquote {page-break-inside: avoid;}
+}
+.but{
+   display: none;
+   visibility: none;
+}
