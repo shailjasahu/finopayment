@@ -7,37 +7,45 @@
  </head>
  <style>
      @page{
-	   size: landscape;
+	   size: 4in;
 	   margin: 0;
 	   page-break-inside: avoid;
       }
 	  @media print{
 	     pre,blockquote {page-break-inside: avoid;}
 	  }
-     img{
-	    width:100%;
+	 .div2{
+	   
+         height: 480px;
+		 width: 480px;
+	     
 	 }
-	 #div1{
-	    height: 230px;
-		width: 180px;
+     img{
+	    width:95%;
+		
+	 }
+	/* #div1{
+        
+	    height: 4.5cm;
+		width: 3.5cm;
 		 position: absolute;
-		left: 70%;
-		top: 50%;
-		border: 2px solid #6600ff;
+		left: 20%;
+		top: 30%;
+		
 		
 	 
-	 }
+	 }*/
 
 	 .c1{ 
-		  width: 50%;
+		  width: 70%;
 		  height: 200px;
-		  position: absolute;
-		  left: 10%;
+		  
 		  
 		  font: serif;
-		padding: 50px;
-		text-align: center;
-		font-size: 22px;
+		position: absolute;
+		left: 5%;
+		text-align: left;
+		font-size: 16px;
 		color: #6633ff;
 		font-weight: bold;
 
@@ -51,9 +59,9 @@
     border-bottom: 1px solid #6633ff;
     background: transparent;
     outline: none;
-    height: 40px;
+    height: 35px;
     color: black;
-    font-size: 24px;
+    font-size: 16px;
 	text-align: center;
 	font: serif;
 	 }
@@ -61,15 +69,18 @@
 	     width:35%;
 		 height: 35px;
 		 background-color: #6666ff;
-		 font-size: 24px;
+		 font-size: 22px;
 		 font: serif;
 		 color: black;
 		 cursor: pointer;
 	 }
+	 button{
+	  page-break-after: avoid;
+	 }
  </style>
 
  <body>
-
+<div class="div2">
 <div><img src="fino.jpg" ></div> 
 
 <div class="c1">
@@ -84,4 +95,4 @@
  </form> 
  <button onclick="window.print();" class="but">Print</button></td>
  </div>
-<div id="div1"></div>
+</div>
